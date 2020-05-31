@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css"/></noscript>
+    <style>
+        :root{--site-background : url("/images/bg.jpg")};
+    </style> 
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body class="is-preload">
+
+    
+        <div id="wrapper">
+
+            
+                <header id="header">
+                    <div class="logo">
+                        <a href="/"><span class="icon fa-flag"></span></a>
+                    </div>
+                    <div class="content">
+                        <div class="inner">
+                            <h1>Blog</h1>
+                            
+                            <p>
+                                Blog 제작 기록
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            
+                                
+                                    
+                                        <li><a href="#hugo-dimension">Hugo &amp; Dimension</a></li>
+                                    
+                                
+                            
+                                
+                                    
+                                        <li><a href="#hugo-dimension23">Hugo &amp; Dimension23</a></li>
+                                    
+                                
+                            
+                        </ul>
+                    </nav>
+                </header>
+
+            
+                <div id="main">
+
+                    
+                        
+                            
+                                <article id="hugo-dimension">
+                                    <h2 class="major">Hugo &amp; Dimension</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    
+
+<h2 id="hugo">Hugo</h2>
+
+<p>Tistory나 Naver 블로그 방식보다 Markdown 형식으로 블로그를 작성하고 싶었습니다. Gatsby, Hugo가 최종 후보혔지만 Go에 이끌려 Hugo를 선택하였습니다.</p>
+
+<p>Hugo에도 테마는 많이 있지만 마음에 드는 테마는 찾기 어려웠습니다.
+2년동안 업데이트가 없지만 깔끔한 Dimension으로 시작해보겠습니다.</p>
+
+<h2 id="install">Install</h2>
+
+<p>Hugo를 설치하기 위해서는 go가 필요합니다.</p>
+
+<p>먼저 gvm을 설치합니다.</p>
+
+<pre><code class="language-bash">$ bash &lt; &lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+
+$ source ~/.gvm/scripts/gvm
+</code></pre>
+
+<p>go를 설치합니다.</p>
+
+<pre><code class="language-bash">$ gvm install go1.14.3 -B
+$ gvm use go1.14.3 --default
+</code></pre>
+
+<p>Hugo를 설치합니다.</p>
+
+<pre><code class="language-bash">$ mkdir $HOME/src
+$ cd $HOME/src
+$ git clone https://github.com/gohugoio/hugo.git
+$ cd hugo
+$ go install
+</code></pre>
+
+<h2 id="using-hugo-dimension">using hugo &amp; dimension</h2>
+
+<p>Hugo를 이용하여 New Site를 생성합니다.</p>
+
+<pre><code class="language-bash">$ hugo new site my-blog
+</code></pre>
+
+<p>Dimension Theme를 적용합니다.</p>
+
+<pre><code class="language-bash">cd my-blog
+git init
+git submodule add https://gitlab.com/dspechnikov/dimension-hugo themes/dimension
+</code></pre>
+
+<p>config.toml파일을 수정합니다.</p>
+
+<pre><code class="language-toml">baseurl = &quot;/&quot;
+languageCode = &quot;en-us&quot;
+theme = &quot;dimension&quot;
+</code></pre>
+
+<p>themes/dimension/exampleSite에 content 예제가 있습니다. 해당 디렉토리를 /로 복사합니다.</p>
+
+<p>hugo를 실행하여 블로그의 작동을 확인합니다.</p>
+
+<pre><code class="language-bash">$ hugo serve -D
+</code></pre>
+
+                                </article>
+                            
+                        
+                    
+                        
+                            
+                                <article id="hugo-dimension23">
+                                    <h2 class="major">Hugo &amp; Dimension23</h2>
+                                    <span class="image main"><img src="" alt="" /></span>
+                                    
+
+<h2 id="table-of-contents">Table of contents</h2>
+
+<ul>
+<li><a href="#table-of-contents">Table of contents</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#code">Code</a>
+
+<ul>
+<li><a href="#python">Python</a></li>
+<li><a href="#cc">C/C++</a></li>
+<li><a href="#bash">Bash</a></li>
+</ul></li>
+<li><a href="#tables">Tables</a></li>
+</ul>
+
+<h2 id="text">Text</h2>
+
+<p>Some example text</p>
+
+<h2 id="code">Code</h2>
+
+<h3 id="python">Python</h3>
+
+<pre><code class="language-python">def foo():
+    print (&quot;This is a python function&quot;)
+</code></pre>
+
+<h3 id="c-c">C/C++</h3>
+
+<pre><code class="language-C">void foo(){
+    prinf(&quot;%s\n&quot;, &quot;This is a C function&quot;)
+}
+</code></pre>
+
+<h3 id="bash">Bash</h3>
+
+<pre><code class="language-bash"># This is a bash command
+cd dir &amp;&amp; echo $PWD;
+
+# Return
+exit 0;
+</code></pre>
+
+<h2 id="tables">Tables</h2>
+
+<table>
+<thead>
+<tr>
+<th>Pages</th>
+<th>Elements</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>Text</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Code</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Tables</td>
+</tr>
+</tbody>
+</table>
+
+                                </article>
+                            
+                        
+                    
+
+                </div>
+
+                
+<footer id="footer">
+    <p class="copyright">&copy; Design: <a href="https://github.com/d-asnaghi">d-asnaghi</a> and <a href="https://html5up.net">HTML5 UP</a>.</p>
+</footer>
+
+        </div>
+
+    
+    <div id="bg"></div>
+
+</body>
+
+
+    
+    <script src=/assets/js/jquery.min.js></script>
+    <script src=/assets/js/browser.min.js></script>
+    <script src=/assets/js/breakpoints.min.js></script>
+    <script src=/assets/js/util.js></script>
+    <script src=/assets/js/main.js></script>
+
+</html>

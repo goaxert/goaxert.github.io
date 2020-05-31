@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GOAXLOG on </title>
+    <link>/</link>
+    <description>Recent content in GOAXLOG on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo &amp; Dimension</title>
+      <link>/blog/blog1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blog1/</guid>
+      <description>Hugo Tistory나 Naver 블로그 방식보다 Markdown 형식으로 블로그를 작성하고 싶었습니다. Gatsby, Hugo가 최종 후보혔지만 Go에 이끌려 Hugo를 선택하였습니다.
+Hugo에도 테마는 많이 있지만 마음에 드는 테마는 찾기 어려웠습니다. 2년동안 업데이트가 없지만 깔끔한 Dimension으로 시작해보겠습니다.
+Install Hugo를 설치하기 위해서는 go가 필요합니다.
+먼저 gvm을 설치합니다.
+$ bash &amp;lt; &amp;lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) $ source ~/.gvm/scripts/gvm  go를 설치합니다.
+$ gvm install go1.14.3 -B $ gvm use go1.14.3 --default  Hugo를 설치합니다.</description>
+    </item>
+    
+    <item>
+      <title>Hugo &amp; Dimension23</title>
+      <link>/blog/blog2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blog2/</guid>
+      <description> Table of contents  Table of contents Text Code  Python C/C++ Bash  Tables  Text Some example text
+Code Python def foo(): print (&amp;quot;This is a python function&amp;quot;)  C/C++ void foo(){ prinf(&amp;quot;%s\n&amp;quot;, &amp;quot;This is a C function&amp;quot;) }  Bash # This is a bash command cd dir &amp;amp;&amp;amp; echo $PWD; # Return exit 0;  Tables    Pages Elements     1 Text   2 Code   3 Tables    </description>
+    </item>
+    
+  </channel>
+</rss>
